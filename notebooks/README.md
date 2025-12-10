@@ -170,6 +170,7 @@ Hour of Day vs Number of Collisions | Barchart displaying Season vs. Number of C
     - Texting                                                       4
 </details>
 
+<a id="assumptions"></a>
 ### Assumptions & Limitations(*)
 
 - For all columns regarding vehicle types, we assumed that missing values in these rows did not indicate government vehicle involvement unless explicitly stated.
