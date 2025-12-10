@@ -92,7 +92,7 @@ Hour of Day vs Number of Collisions | Barchart displaying Season vs. Number of C
      -  The majority of collisions happen during nighttime, indicating that the dark may be a factor in the collisions.
 - Bar Chart Insights:
     - Surprisingly, Summer had the most collisions, and Winter had the least, despite dangerous weather conditions
-        - An article based in Virginia cites the following factors as an explanation for the rise in collisions during summertime:
+        - An article based in Virginia [[1]](#ref1) cites the following factors as an explanation for the rise in collisions during summertime:
             - Inexperienced Teens on Summer Break
             - Traffic Congestion
             - Road Construction
@@ -181,7 +181,9 @@ Hour of Day vs Number of Collisions | Barchart displaying Season vs. Number of C
 -  We assumed that the type of government-owned vehicles is listed with priority over the style of vehicle. E.g., we assume that none of the vehicles listed as a Sedan are government-owned, or else they would have been listed as such.
 
 ### References
-https://virginiatrialfirm.com/car-accident-lawyers/why-are-car-accidents-more-likely-to-happen-in-the-summer/
+<a id="ref1"></a>
+1. Why are Car Accidents More Likely to Happen in the Summer?
+  https://virginiatrialfirm.com/car-accident-lawyers/why-are-car-accidents-more-likely-to-happen-in-the-summer/
 <br>
 ***
 
