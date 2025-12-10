@@ -11,16 +11,16 @@ This markdown documents the initial EDA, cleaning, and proposed scope of the pro
 
 <div align='center'>
 
-**Do electric vehicles during certain seasons contribute to more people injured?**
+**Do drivers of government vehicles need more training??**
 </div>
 
 ### Proposed Variables
 
-- y = `number_of persons_injured` (Continuous)
+- y = `number_of_persons_injured` (Continuous)
 
 <br>
 
-- X1 = `is_electric` (Binary)
+- X1 = `is_government` (Binary)
     - From `vehicle_type_code_#`, flag for e-bikes, e-scooters, etc.
 
     - No scaling needed?
@@ -40,14 +40,14 @@ This markdown documents the initial EDA, cleaning, and proposed scope of the pro
 
     <br>
 
-- X3 = `electric_crash_date` (Interaction)
-    - How the effect of `is_electric` changes given varying `season`.
+- X3 = `government_crash_date` (Interaction)
+    - How the effect of `is_government` changes given varying `season`.
 
 ### Factors to Tweak (If Output is Poor)
 
 - Try phases of the day instead of seasons of the year
 
-- Pull from Dec 2021 as well (for even season converage)
+- Pull from Dec 2021 as well (for even season coverage)
 
 - Try other injury/death statistic columns
     - `number_of_persons_killed`
@@ -64,12 +64,13 @@ There are no missing rows for `crash_date` or `number_of_persons_injured`. While
 
 `month` & `season`
 
-### Assumptions
+### Assumptions & Limitations
 
-- For all columns regarding vehicle types, we assumed that missing values in these rows did not indicate electric vehicle involvement unless explicitely stated.
+- For all columns regarding vehicle types, we assumed that missing values in these rows did not indicate government vehicle involvement unless explicitly stated.
 
-- Fake registrations for EVs (hit-and-runs)
+- For the vehicles `Ambulance`, `Bus`, `Garbage Truck`, `Delivery Truck`, and `Fire Truck`, we assumed that they were all government-owned vehicles, not commercial or private.
 
+-  The EDA puts all vehicles contributing to a collision on one line, separated by "|". This may affect the specific count of government vehicles, but it correctly gives the number of collisions involving government vehicles.
 <br>
 
 ***
