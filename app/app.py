@@ -24,6 +24,8 @@ st.image('dcas.png')
 
 md1 = st.subheader(':blue[**Adjust the features on the left to see the likelihood of government vehicle collisions causing injury/death ⬇**]', text_alignment='center')
 
+st.markdown('***', text_alignment='center')
+
 # caches, model + pipeline
 
 @st.cache_data
@@ -147,6 +149,7 @@ if prediction_btn:
         else:
              st.success('😪 Injury/Death Unlikely 😅')
 
+st.markdown('***', text_alignment='center')
 
 # map
 if not filtered_df.empty and 'latitude' in filtered_df.columns and 'longitude' in filtered_df.columns:
@@ -163,6 +166,24 @@ else:
     st.info("No data points found matching the selected criteria. Try adjusting the features.")
 
 with st.expander("Additional Information"):
+
+    st.subheader('What constitutes a government vehicle?', text_alignment='center')
+
+    st.markdown(
+        '''
+        - Departments of Public Works, Transportation, Environmental Protection, Buildings, Parks, etc.
+        - Emergency Medical Services
+        - Garbage trucks
+        - Municipal buses (NYCTA, MTA, NICE, HART, and others)
+        - New York City, County, Town, and Village AgenciesDepartment of Public Works
+        - Police (NYPD, Nassau County, Suffolk County, Town, and Village)
+        - School buses
+        - United States Postal Service (USPS)
+'''
+    )
+    st.markdown('According to [Finz & Finz Firm](https://finzfirm.com/blog/accidents-involving-government-vehicles-in-ny/)', text_alignment='center')
+
+    st.subheader('Links')
     st.markdown('''
         
         - Data: [NYC OpenData](https://data.cityofnewyork.us/Public-Safety/Motor-Vehicle-Collisions-Crashes/h9gi-nx95/about_data)
