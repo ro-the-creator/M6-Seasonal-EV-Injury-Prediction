@@ -2,7 +2,7 @@
 
 <div align='center'>
 
-### **A predictive modeling project for the NYPD, forecasting seasonal trends of injuries involving electric vehicles in New York City.**
+### **A predictive modeling project for the NYPD, forecasting seasonal trends of injuries involving government vehicles in New York City.**
 </div>
 
 
